@@ -1,0 +1,12 @@
+.history/
+*.DS_Store
+*.aux
+*.fls
+*.log
+*.fdb_latexmk
+*.pdf
+*.synctex.gz
+*.out
+*.bbl
+*.blg
+*.synctex(busy)
