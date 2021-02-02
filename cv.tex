@@ -4,6 +4,9 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\newcounter{qcounter}
+
+
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{bibentry}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -17,31 +20,28 @@
 \bibliographystyle{ieeetr}
 
 
-{\bf Objective:} A Research Scientist in Artificial Intelligence with a particular focus on Formal Methods.
+{\bf Objective:} A Research Scientist in Reinforcement Learning with a focus on Formal Methods.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 {\bf Worcester Polytechnic Institute} \hfill {\em September 2016 - August 2021 (Expectation)} 
-\\ Robotics Engineering \hfill {\em Doctorate Candidate}
-\\ Advisor: Jie, Fu
-\\ {Overall GPA: \bf{3.76}/4.0}
+\\ Robotics Engineering \hfill {\em Doctoral Candidate}
+\\ Advisor: Jie Fu
+\\ {Overall GPA: \bf{3.89}/4.0}
 
 {\bf Worcester Polytechnic Institute} \hfill
 {\em September 2014 - May 2016}
 \\ Computer Science \hfill {\em Master of Science}
-\\ Thesis: BiRRTOpt: A COMBINED SOFTWARE FRAMEWORK FOR MOTION PLANNING APPLIED ON ATLAS ROBOT
-\\ Advisor: Michael, Gennert
-\\ {Overall GPA: 3.64/4.0}
+\\ Advisor: Michael Gennert
+\\ {Overall GPA: \bf{3.64}/4.0}
 
 {\bf Harbin Institute of Technology} \hfill {\em September 2010 - July 2014}
-\\ Information Security (Computer Science) \hfill {\em Bachelor of Science}
-\\ {Thesis: Contourlet Transform Based Image Compression}
-\\ Advisor: Miao, Zhang
+\\ Computer Science \hfill {\em Bachelor of Science}
+\\ Advisor: Miao Zhang
 \\ English Language and Literature \hfill {\em Bachelor of Arts}
-\\ {Thesis: A Study on the Male Chauvinism in ``Women in Love''}
-\\ Advisor: Yuping, Jia
+\\ Advisor: Yuping Jia
 \\ {Overall GPA: 85/100} (Top 10\%)
 \end{rSection}
 
@@ -52,19 +52,22 @@
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages &  C/C++, MATLAB, Python, Java, HTML, JavaScript, SQL, 
-\\ & Assembly Language, BASIC, XML, ASP, Verilog, CSS \\
-Software \& Tools & ROS, LaTeX, MFC, PowerBuilder, Qt Creator, IxChariot, Git, Vim
+Programming Languages &  C/C++, Python, MATLAB, Java, SQL, Assembly Language \\
+Software \& Tools & PyTorch, Git, Vim, ROS (Robot Operating System), Linux
 \end{tabular}
 
 \end{rSection}
 
 \begin{rSection}{Research Experience}
 \begin{rSubsection}{Control and Intelligent Robotics Lab (CIRL)}{Worcester Polytechnic Institute}{Research Assistant}{June 2019 - August 2020}
-\item Worked on the \em{Serial Interactions in Imperfect Information Games Applied to Complex Military Decision Making (SI3-CMD)}.
+\item Collaborated with Scientific Systems Company Inc (SSCI) on the \em{Serial Interactions in Imperfect Information Games Applied to Complex Military Decision Making (SI3-CMD)}.
+\item Developed a generic framework for deceptive planning.
+\item Achieved a higher probability of completing objectives by using asymmetrical information.
 \end{rSubsection}
 \begin{rSubsection}{Control and Intelligent Robotics Lab (CIRL)}{Worcester Polytechnic Institute}{Research Assistant}{June 2016 - August 2017}
-\item Worked on the \em{Reinforcement Learning under Temporal Logic Constraints}.
+\item Researched on \em{Reinforcement Learning with Temporal Logic Constraints}.
+\item Proposed a new sampling-based reinforcement learning algorithm with neural network function approximator implemented in PyTorch.
+\item Addressed the sparse reward issue in planning for stochastic dynamic system with partial observation.
 \end{rSubsection}
 \end{rSection}
 
@@ -73,14 +76,17 @@ Software \& Tools & ROS, LaTeX, MFC, PowerBuilder, Qt Creator, IxChariot, Git, V
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Teaching Experience}
-\begin{rSubsection}{Worcester Polytechnic Institute}{Worcester, MA}{Teaching Assistant}{August 2020 - Present}
-\item Collaborated with another teaching assistant to lead a team of 5 to help students for improving the teaching quality of the course {\em Unified Robotics}.
+\begin{rSubsection}{Unified Robotics (WPI)}{Worcester Polytechnic Institute}{Teaching Assistant}{August 2020 - Present}
+\item Led 3D-printed robot arm control lab and mobile robot navigation lab.
+\item Created and evaluated students' final projects, lab reports, and homework assignments.
 \end{rSubsection}
-\begin{rSubsection}{Worcester Polytechnic Institute}{Worcester, MA}{Teaching Assistant}{August 2018 - December 2018}
-\item Collaborated with another teaching assistant and two graders to help improving the teaching quality of the course {\em Computer Vision}.
+\begin{rSubsection}{Computer Vision (WPI)}{Worcester Polytechnic Institute}{Teaching Assistant}{August 2018 - December 2018}
+\item Conducted a lecture on image filtering.
+\item Led office hours to assist students understand course material and homework problems.
 \end{rSubsection}
-\begin{rSubsection}{Worcester Polytechnic Institute}{Worcester, MA}{Teaching Assistant}{August 2017 - May 2018}
-\item Led a team of 5 to help and collaborate with students for improving the teaching quality of the course {\em Introduction to Robotics}.
+\begin{rSubsection}{Introduction to Robotics (WPI)}{Worcester Polytechnic Institute}{Teaching Assistant}{August 2017 - May 2018}
+\item Supervised a team of 5 undergraduate peer learning assistants.
+\item Mentored students and evaluated final projects, lab reports, and homework assignments.
 \end{rSubsection}
 \end{rSection}
 
@@ -90,24 +96,17 @@ Software \& Tools & ROS, LaTeX, MFC, PowerBuilder, Qt Creator, IxChariot, Git, V
 
 \begin{rSection}{Industry Experience}
 \begin{rSubsection}{Rudolph Technologies}{Tewksbury, MA}{Software Engineering Contractor}{August 2015 - January 2016}
-\item Developed the software to process data collected from the wafers to help customers such as Samsung, Intel, and et al. improve the production of wafers.
+\item Improved the code quality of a system that collets data from wafers.
+\item Analyzed and visualized data to help customers with improving the CPU production.
 \end{rSubsection}
 \begin{rSubsection}{Rudolph Technologies}{Tewksbury, MA}{Software Engineering Intern}{July 2015 - August 2015}
-\item Programmed and Assisted in migrating code and history from several version control systems on various operating systems to Perforce.
+\item Developed an automated tool for migrating codebase from multiple version control systems to an unified system.
 \end{rSubsection}
 \begin{rSubsection}{Neusoft}{Dalian, China}{Software Engineering Intern}{July 2013 - August 2013}
-\item Developed a map management system for storing, inserting, deleting, sorting, and search maps.
+\item Developed a map management system.
+\item Optimized the efficiency of inserting, deleting, editing operations over maps. 
 \end{rSubsection}
-% \begin{rSubsection}{Philips(China)}{Shanghai, China}{Software Engineering Intern}{July 2012 - August 2012}
-% \item Assisted in fixing bugs and improving the performance of mature software product.
-% \end{rSubsection}
 \end{rSection}
-
-% \begin{rSection}{Position of Responsibility}
-% \begin{rSubsection}{Graduate Student Government(GSG)}{Worcester Polytechnic Institute}{President}{January 2019 - Present}
-% \item fdsf
-% \end{rSubsection}
-% \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -125,38 +124,59 @@ Software \& Tools & ROS, LaTeX, MFC, PowerBuilder, Qt Creator, IxChariot, Git, V
 
 \begin{rSection}{Publications}
 \subsection*{Under review}
+\begin{list}{U \arabic{qcounter}:~}{\usecounter{qcounter}}    
     \item \bibentry{li2020dynamic}
+    \end{list}
 \subsection*{Conference}
+\begin{list}{C \arabic{qcounter}:~}{\usecounter{qcounter}}    
     \item \bibentry{li2019topological}
     \item \bibentry{li2018approximate}
     \item \bibentry{li2017sampling}
     \item \bibentry{li2016birrtopt}
     \item \bibentry{atkeson2015no}
+\end{list}
 \subsection*{Journal}
+\begin{list}{J \arabic{qcounter}:~}{\usecounter{qcounter}}    
     \item \bibentry{8533357}
     \item \bibentry{dedonato2017team}
     \item \bibentry{atkeson2016happened}
+\end{list}
+
 \subsection*{Book}
+\begin{list}{B \arabic{qcounter}:~}{\usecounter{qcounter}}    
     \item \bibentry{atkeson2018achieving}
     \item \bibentry{atkeson2018happened}
+\end{list}
 \subsection*{Thesis}
+
+\begin{list}{T \arabic{qcounter}:~}{\usecounter{qcounter}}
     \item \bibentry{limaster}
+    \item \bibentry{libs}
+    \item \bibentry{liba}
+\end{list}
 \end{rSection}
 
 \begin{rSection}{Extracurricular}
 \begin{rSubsection}{Lhasa Welfare Center for Children}{Tibet, China}{Volunteer Teacher}{August 2013 - September 2013}
-    \item Raised funds for children. 
-    \item Volunteered to teach children.
+    \item Fundraising for providing educational services to children from low income families.
+    \item Volunteered to educate children across different subjects, including Chinese, Math, and English.
 \end{rSubsection}
 \begin{rSubsection}{Graduate Student Government (GSG)}{Worcester, Massachusetts}{President}{January 2019 - May 2020}
-    \item Oversaw the functions of the GSG and the GSG Officers are carried out in a manner prescribed in this constitution, the GSG Bylaws, Standing Rules, and as deemed by the GSG.
+    \item Supervised the GSG governing body.
+    \item Pepreneted GSG to the university administration.
+    \item Collaborated with Graduate Studies Office to raise awareness of housing issue to Board of Trustees.
+    \item Chaired provost search committee and made recommendation. 
 \end{rSubsection}
 \begin{rSubsection}{Higher Education Consortium of Central Massachusetts}{Worcester, Massachusetts}{Student}{July 2018 - August 2019}
-    \item Certificate in College Teaching
+    \item Completed a Certificate in College Teaching.
 \end{rSubsection}
 \begin{rSubsection}{Harvard Summer School}{Cambridge, Massachusetts}{Student}{June 2015 - August 2015}
-\item Fundamentals of Website Development
+    \item Completed a course on Fundamentals of Website Development.
 \end{rSubsection}
 \end{rSection}
+
+% \begin{rSection}{Contact Information}
+    
+% \end{rSection}
 
 \end{document}
