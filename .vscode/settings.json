@@ -13,5 +13,8 @@
         "**/*.log": true,
         "**/*.gz": true
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "cSpell.words": [
+        "birrtopt"
+    ]
 }
