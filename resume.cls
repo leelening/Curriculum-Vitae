@@ -92,23 +92,18 @@
 %	SECTION FORMATTING
 %----------------------------------------------------------------------------------------
 
-% Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
-  }
+    % \setlength{\leftmargin}{1.5em} % Margin within the section
+  \leftmargin=1.5em} % Margin within the section
   \item[]
 }{
   \end{list}
 }
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
-%----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} % Bold company name and date on the right
@@ -116,7 +111,39 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{$\circ$}{\leftmargin=1.5em} % \circ used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{pSubsection}[2]{
+  {\bf #1} % Paragraph title
+  \smallskip
+  \begin{list}{#2\arabic{qcounter}}{\usecounter{qcounter}\leftmargin=2em} % \circ used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+\newenvironment{lSection}[1]{ % 1 input argument - section name
+  \sectionskip
+  \MakeUppercase{\bf #1} % Section title
+  \sectionlineskip
+  \hrule % Horizontal line
+  \begin{list}{$\circ$}{\leftmargin=2em} % \circ used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \item[]
+  }{
+  \end{list}
+}
+
+\newenvironment{lSubsection}[1]{
+  {\bf #1} % Paragraph title
+  \smallskip
+  \begin{list}{$\circ$}{\leftmargin=2em} % \circ used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
