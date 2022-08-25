@@ -5,10 +5,6 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \usepackage{bibentry}
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\def\changemargin#1{\list{}{\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist 
 
 \newcounter{qcounter}
 
@@ -17,9 +13,9 @@
 %	CONTACT SECTION
 %----------------------------------------------------------------------------------------
 \name{Lening Li} % Your name
-\address{39 William St, Apt 203, Worcester, MA 01609 USA} % Your address
-\address{+1~(774)~823~2639 \\ {lli4@wpi.edu} \\ \url{https://lening.li} \\ \url{https://github.com/leelening}}
-
+\address{160 Cambridge St, Unit 104, Burlington, MA 01803, USA}
+\address{+1~(774)~823~2639 \\ {leningli@outlook.com}
+}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -40,66 +36,88 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
-{\bf Ph.D. Candidate in Robotics Engineering} \hfill {Aug. 2016 - Aug. 2021 (Exp.)} 
-\\ {\it Worcester Polytechnic Institute (WPI)} \hfill {Worcester, MA USA} 
-\\ {Overall GPA: \bf{4.0}/4.0}
+\begin{hSubsection}
+{Ph.D. in Robotics Engineering}{Aug. 2016 - Present} {\it Worcester Polytechnic Institute (WPI)} {Worcester, MA, USA}{Overall GPA: \bf{4.0}/4.0}
+\end{hSubsection}
 
-{\bf M.S. in Robotics Engineering} \hfill {Aug. 2016 - May. 2021}
-\\ {\it Worcester Polytechnic Institute (WPI)} \hfill {Worcester, MA USA} 
-\\ {Overall GPA: \bf{3.70}/4.0}
+\begin{hSubsection}
+{M.S. in Robotics Engineering}
+{Aug. 2016 - May. 2021}
+{Worcester Polytechnic Institute (WPI)}
+{Worcester, MA, USA} 
+{Overall GPA: \bf{3.70}/4.0}
+\end{hSubsection}
 
-{\bf M.S. in Computer Science} \hfill {Aug. 2014 - May 2016}
-\\ {\it Worcester Polytechnic Institute (WPI)} \hfill {Worcester, MA USA} 
-\\ {Overall GPA: \bf{3.64}/4.0}
+\begin{hSubsection}
+{M.S. in Computer Science}
+{Aug. 2014 - May 2016}
+{Worcester Polytechnic Institute (WPI)}
+{Worcester, MA, USA} 
+{Overall GPA: \bf{3.64}/4.0}
+\end{hSubsection}
 
-{\bf B.S. in Computer Science \& B.A. in English Language and Literature} \hfill{Sep. 2010 - Jul. 2014}
-\\ {\it Harbin Institute of Technology (HIT)} \hfill {China} 
-\\ {Overall GPA: 85/100} ({\bf Top 10\%})
+\begin{hSubsection}
+{B.S. in Computer Science \& \\
+B.A. in English Language and Literature}{Sep. 2010 - Jul. 2014}
+{\it Harbin Institute of Technology (HIT)}{China} 
+{Overall GPA: 85/100} ({\bf Top 10\%})
+\end{hSubsection}
 \end{rSection}
 
 \begin{rSection}{Certifications}
-{\bf Certification in College Teaching} \hfill {Jun. 2017 - Aug. 2019}
-\\ {\it Higher Education Consortium of Central Massachusetts (HECCMA)} \hfill {Worcester, MA USA} 
-\\ {Professional training on the teaching methods for providing high-quality courses.}
+\begin{hSubsection}
+{Certification in College Teaching}
+{Jun. 2017 - Aug. 2019}
+{Higher Education Consortium of Central Massachusetts (HECCMA)}
+{Worcester, MA, USA}
+{Professional training on the teaching methods for providing high-quality courses.}
+\end{hSubsection}
 
-{\bf Certification in Fundamentals of Website Development} \hfill {Jun. 2015 - Aug. 2015}
-\\ {\it Harvard Extension School} \hfill {Cambridge, MA USA}
-\\ {Course covering ideology and methodology of website development, including CSS, HTML, JavaScript.}
+\begin{hSubsection}
+{Certification in Fundamentals of Website Development}
+{Jun. 2015 - Aug. 2015}
+{Harvard Summer School}
+{Cambridge, MA, USA}
+{Course covering ideology and methodology of website development, including CSS, HTML, JavaScript.}
+\end{hSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	REPRESENTATIVE PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Representative Projects}
-    \begin{rSubsection}{Learning-based Planning with Temporal Logic Constraints}{Aug. 2016 - Present}{Researcher}{Worcester, MA USA}
-        \item Developing a model-free reinforcement learning method for stochastic planning under temporal logic constraints using PyTorch.
-        \item Using temporal logic formulas instead of reward function to rigorously express the desired properties to be achieved in the learned policies for stochastic systems. 
-        \item Addressing the sparse reward issue for a stochastic dynamic system with partial observation. 
-        \item Providing provable performance guarantees in the controller learned from RL algorithms.
-\end{rSubsection} 
-
-    \begin{rSubsection}{DARPA SI3-CMD}{Jan. 2019 - Aug. 2020}{Researcher}{Worcester MA USA}
+    \begin{rSubsection}{DARPA Robotics Challenge}{Aug. 2014 - May 2015}{Researcher}{Worcester, MA, USA}
+        \item Collaborated with a team from Carnegie Mellon University on Atlas Humanoid robot.
+        \item Developed a motion planner for arm manipulation using ROS, RVIZ, OpenRave, and Gazebo.
+    \end{rSubsection}
+    \begin{rSubsection}{DARPA SI3-CMD}{Jan. 2019 - Aug. 2020}{Researcher}{Worcester MA, USA}
         \item Collaborated with Scientific Systems Company Inc (SSCI) on the Serial Interactions in Imperfect Information Games Applied to Complex Military Decision Making (SI3-CMD).
         \item Developed a theoretical framework and Python-based software for deceptive planning.
         \item Achieved a higher probability of completing objectives by using asymmetrical information.
     \end{rSubsection}
-
-    \begin{rSubsection}{DARPA Robotics Challenge}{Aug. 2014 - May 2015}{Researcher}{Worcester, MA USA}
-        \item Collaborated with a team from Carnegie Mellon University on Atlas Humanoid robot.
-        \item Developed a motion planner for arm manipulation using ROS, RVIZ, OpenRave, and Gazebo.
-    \end{rSubsection}
+    \begin{rSubsection}{Learning-based Planning with Temporal Logic Constraints}{Aug. 2016 - Aug. 2022 }{Researcher}{Worcester, MA, USA}
+        \item Developed a model-free reinforcement learning method for stochastic planning under temporal logic constraints using PyTorch.
+        \item Used temporal logic formulas instead of reward function to rigorously express the desired properties to be achieved in the learned policies for stochastic systems. 
+        \item Addressed the sparse reward issue for a stochastic dynamic system with partial observation.
+        \item Provided provable performance guarantees in the controller learned from RL algorithms.
+\end{rSubsection} 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	INDUSTRY EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Industry Experience}
-\begin{rSubsection}{Software Engineering Contractor}{Aug. 2015 - Jan. 2016}{Rudolph Technologies}{Tewksbury, MA USA}
+\begin{rSubsection}{Senior Software Engineer}{Oct. 2021 - Aug. 2022}{Berkshire Grey}{Bedford, MA, USA}
+    \item Developed algorithms for picking unknown stock keeping units.
+    \item Improved the code quality of robot picking.
+\end{rSubsection}
+
+\begin{rSubsection}{Software Engineering Contractor}{Aug. 2015 - Jan. 2016}{Rudolph Technologies}{Tewksbury, MA, USA}
 \item Improved the code quality of a system that collects data from wafers. 
 \item Analyzed and visualized data to help customers with improving CPU production.
 \end{rSubsection}
 
-\begin{rSubsection}{Software Engineering Intern}{Jun. 2015 - Aug. 2015}{Rudolph Technologies}{Tewksbury, MA USA}
+\begin{rSubsection}{Software Engineering Intern}{Jun. 2015 - Aug. 2015}{Rudolph Technologies}{Tewksbury, MA, USA}
 \item Developed an automated tool for migrating codebase from multiple version control systems to a unified system.
 \end{rSubsection}
 
@@ -112,30 +130,150 @@
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Teaching Experience}
+\begin{rSection}{Teaching}
 \begin{rSubsection}
-{Teaching Assistant}{Aug. 2020 - Present}{RBE 3001. \& 3002. Unified Robotics III \& IV, WPI}{Worcester, MA USA}
+{Teaching Assistant}{Aug. 2022 - Dec. 2022}{RBE 549. Computer Vision, WPI}{Worcester, MA, USA}
+\item Helped design the new computer vision course.
+\item Led office hours to assist students in understanding course material and with homework difficulties.
+\item Course website: \url{https://nitinjsanket.github.io/teaching/rbe549/fall2022.html}
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{Aug. 2018 - Dec. 2018}{RBE 549. Computer Vision, WPI}{Worcester, MA, USA}
+\item Conducted a lecture on image filtering.
+\item Led office hours to assist students in understanding course material and with homework difficulties.
+\end{rSubsection}
+
+\begin{rSubsection}
+{Teaching Assistant}{Aug. 2020 - May 2021}{RBE 3001. \& 3002. Unified Robotics III \& IV, WPI}{Worcester, MA, USA}
 \item Led 3D-printed robot arm control lab and mobile robot navigation lab.
 \item Designed and evaluated students' final projects, lab reports, and homework assignments.
 \end{rSubsection}
 
-\begin{rSubsection}{Teaching Assistant}{Aug. 2018 - Dec. 2018}{RBE 549. Computer Vision, WPI}{Worcester, MA USA}
-\item Conducted a lecture on image filtering.
-\item Led office hours to assist students in understanding course material and with homework difficulties.
-\end{rSubsection}
-\begin{rSubsection}{Teaching Assistant}{Aug. 2017 - May 2018}{RBE 1001. Introduction to Robotics, WPI}{Worcester, MA USA}
+\begin{rSubsection}{Teaching Assistant}{Aug. 2017 - May 2018}{RBE 1001. Introduction to Robotics, WPI}{Worcester, MA, USA}
 \item Supervised a team of 5 undergraduate peer learning assistants.
 \item Mentored students and evaluated final projects, lab reports, and homework assignments.
 \end{rSubsection}
+\end{rSection}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Representative Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Programming & C/C++, Python, LaTex, MATLAB \\
+    Robotic Tools & Ubuntu, ROS, RVIZ, Gazebo, OpenRave \\
+    Software & PyTorch, TensorFlow, Git, Elasticsearch, Kubernetes, QtCreator
+    \end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Honors \& Awards}
+\begin{nSubsection}
+{Summa Cum Laude}
+{Jul. 2014}
+{HIT}{China}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Alex F. Backlin Fund Scholarship, \$1610} {Jan. 2021}
+{WPI}
+{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Travel Grant Award, \$250}{Oct. 2019}
+{Lehigh University}{Bethlehem, PA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award, \$500}{Oct. 2019}
+{WPI}{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award, \$400}{Mar. 2019}
+{WPI}{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award, \$1000}{Jun. 2017}
+{WPI}{Worcester, MA, USA}
+\end{nSubsection}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extracurricular Activities}
+    \begin{rSubsection}{President}{Jan. 2019 - May 2020}{Graduate Student Government (GSG)}{Worcester, MA, USA}
+        \item Supervised the GSG governing body.
+        \item Presented on behalf of the GSG to the university administration.
+        \item Collaborated with Graduate Studies Office to raise awareness of housing issues to Board of Trustees.
+        \item Chaired provost search committee and made recommendations. 
+    \end{rSubsection}
+    \begin{rSubsection}{Volunteer Teacher}{Jul. 2013 - Sep. 2013}{Lhasa Welfare Center for Children}{China}
+        \item Fundraised for providing educational services to children from low-income families.
+        \item Volunteered to educate children across different subjects, including Chinese, Math, and English.
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ORGANIZATION MEMBERSHIPS SECTION
+%----------------------------------------------------------------------------------------
+\begin{lSection}{Organization Memberships}
+    \item {\bf Member}, IEEE
+    \item {\bf Member}, IEEE Young Professionals
+    \item {\bf Member}, IEEE Robotics and Automation Society
+    \item {\bf Member}, Association for Women in Mathematics
+    \item {\bf Member}, Alpha Chapter of Rho Beta Epsilon (Honer society) at Worcester Polytechnic Institute.
+\end{lSection}
+
+%----------------------------------------------------------------------------------------
+%	SOCIAL MEDIA SECTION
+%----------------------------------------------------------------------------------------
+\begin{lSection}{Social Media}
+    \item Linkedin: \url{https://www.linkedin.com/in/lening-li}
+    \item Profile: \url{https://lening.li}
+    \item GitHub: \url{https://github.com/leelening}
+    \item Google Scholar: \url{https://scholar.google.com/citations?user=KWUJ10wAAAAJ\&hl=en}
+\end{lSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGE PROFICIENCY SECTION
+%----------------------------------------------------------------------------------------
+\begin{lSection}{Language Proficiency}
+    \item {\bf Chinese}, Native
+    \item {\bf English}, Fluent
+\end{lSection}
+
+%----------------------------------------------------------------------------------------
+%	EDITORIAL ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Editorial Activities}
+    \begin{lSubsection}{Journal Reviewer}
+        \item IEEE Control Systems Letters (L-CSS).   
+    \end{lSubsection}
+    \begin{lSubsection}{Conference Reviewer}
+        \item International Conference on Robotics and Automation (ICRA) 2017 2021.
+        \item American Control Conference (ACC), 2019 2021
+        \item IEEE Conference on Decision and Control (CDC), 2018 2019 2020
+        \item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020
+        \item International Conference on Ubiquitous Robots (UR), 2020
+    \end{lSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Publications}
-    \begin{pSubsection}{Under review}{U}
-        \item L.Li and J. Fu, "Policy Synthesis for Metric Interval Temporal Logic with Probabilistic Distributions", arXiv preprint arXiv:2105.04593, 2021
-        \item \bibentry{li2020dynamic}
+    \begin{pSubsection}{Under Preparation}{U}
+        \item L.Li and J. Fu, "Topological Order Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives ", 2022
     \end{pSubsection}
 
     \begin{pSubsection}{Conference}{C}
@@ -144,12 +282,14 @@
         \item \bibentry{li2017sampling}
         \item \bibentry{li2016birrtopt}
         \item \bibentry{atkeson2015no}
+        \item \bibentry{li2021policy}
     \end{pSubsection}
 
     \begin{pSubsection}{Journal}{J}
         \item \bibentry{chen2018building}
         \item \bibentry{dedonato2017team}
         \item \bibentry{atkeson2016happened}
+        \item \bibentry{li2020dynamic}
     \end{pSubsection}
     
     \begin{pSubsection}{Book}{B}
@@ -173,88 +313,6 @@
     \end{pSubsection}
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Honors \& Awards}
-{\bf Summa Cum Laude} \hfill {Jul. 2014} \\
-{\it Harbin Institute of Technology} \hfill {China}
-    
-{\bf Travel Grant Award, \$250} \hfill {Oct. 2019}\\
-{\it Lehigh University}\hfill {Bethlehem, PA USA}
-
-{\bf Graduate Student Travel Award, \$500} \hfill {Oct. 2019} \\
-{\it Worcester Polytechnic Institute} \hfill {Worcester, MA USA}
-
-{\bf Graduate Student Travel Award, \$400} \hfill {Mar. 2019} \\
-{\it Worcester Polytechnic Institute}\hfill {Worcester, MA USA}
-
-{\bf Graduate Student Travel Award, \$1000} \hfill {Jun. 2017}\\
-{\it Worcester Polytechnic Institute}\hfill {Worcester, MA USA}
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	EXTRACURRICULAR ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Extracurricular Activities}
-    \begin{rSubsection}{President}{Jan. 2019 - May 2020}{Graduate Student Government (GSG)}{Worcester, MA USA}
-        \item Supervised the GSG governing body.
-        \item Presented on behalf of the GSG to the university administration.
-        \item Collaborated with Graduate Studies Office to raise awareness of housing issues to Board of Trustees.
-        \item Chaired provost search committee and made recommendations. 
-    \end{rSubsection}
-    \begin{rSubsection}{Volunteer Teacher}{Jul. 2013 - Sep. 2013}{Lhasa Welfare Center for Children}{China}
-        \item Fundraised for providing educational services to children from low-income families.
-        \item Volunteered to educate children across different subjects, including Chinese, Math, and English.
-\end{rSubsection}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDITORIAL ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Editorial Activities}
-    \begin{lSubsection}{Journal Reviewer}
-        \item IEEE Control Systems Letters (L-CSS).   
-    \end{lSubsection}
-    \begin{lSubsection}{Conference Reviewer}
-        \item International Conference on Robotics and Automation (ICRA) 2017 2021.
-        \item American Control Conference (ACC), 2019 2021
-        \item IEEE Conference on Decision and Control (CDC), 2018 2019 2020
-        \item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020
-        \item International Conference on Ubiquitous Robots (UR), 2020
-    \end{lSubsection}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGE PROFICIENCY SECTION
-%----------------------------------------------------------------------------------------
-\begin{lSection}{Language Proficiency}
-    \item {\bf Chinese}, Native
-    \item {\bf English}, Fluent
-\end{lSection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Skills}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Programming & C/C++, Python, MATLAB, Java, SQL, Assembly Language, LaTex, HTML \\
-    Robotic Tools & ROS, RVIZ, Gazebo, OpenRave \\
-    Software & PyTorch, Git, Vim, PowerBuilder \\
-    Others & Ubuntu, VS Code, QtCreator, MFC, Perforce, Verilog
-    \end{tabular}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	ORGANIZATION MEMBERSHIPS SECTION
-%----------------------------------------------------------------------------------------
-\begin{lSection}{Organization Memberships}
-    \item {\bf Member}, IEEE
-    \item {\bf Member}, IEEE Young Professionals
-    \item {\bf Member}, IEEE Robotics and Automation Society
-    \item {\bf Member}, Association for Women in Mathematics
-\end{lSection}
 
 
 \end{document}

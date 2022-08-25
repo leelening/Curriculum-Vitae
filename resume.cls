@@ -67,7 +67,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{\namesize\bf \@name}\hfil
     \nameskip\break
   \endgroup
 }
@@ -105,11 +105,30 @@
   \end{list}
 }
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+\newenvironment{nSubsection}[4]{ % 5 input arguments - degree, year(s) earned, school name, location, and Highlight
+ {\bf #1} \hfill {#2} % Bold job title and date on the right
+ \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the company name and location line
   \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\em #3} \hfill {#4} % Italic company name and location
+  }
+}
+
+\newenvironment{hSubsection}[5]{ % 5 input arguments - degree, year(s) earned, school name, location, and Highlight
+ {\bf #1} \hfill {#2} % Bold job title and date on the right
+ \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the company name and location line
+  \\
+  {\em #3} \hfill {#4} % Italic company name and location
+  }\\ 
+%   \smallskip % Produce an amount of vertical space
+  #5
+}
+
+
+\newenvironment{rSubsection}[4]{ % 4 input arguments - job title, year(s) employed, company name, and location
+ {\bf #1} \hfill {#2} % Bold job title and date on the right
+ \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the company name and location line
+  \\
+  {\em #3} \hfill {#4} % Italic company name and location
   }\smallskip
   \begin{list}{$\circ$}{\leftmargin=1.5em} % \circ used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
@@ -118,6 +137,7 @@
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
+% Paragraph section
 \newenvironment{pSubsection}[2]{
   {\bf #1} % Paragraph title
   \smallskip
@@ -128,6 +148,7 @@
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
+% List section
 \newenvironment{lSection}[1]{ % 1 input argument - section name
   \sectionskip
   \MakeUppercase{\bf #1} % Section title
