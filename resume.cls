@@ -105,7 +105,7 @@
   \end{list}
 }
 
-\newenvironment{nSubsection}[4]{ % 5 input arguments - degree, year(s) earned, school name, location, and Highlight
+\newenvironment{nSubsection}[4]{ % 4 input arguments - degree, year(s) earned, school name, location, and Highlight
  {\bf #1} \hfill {#2} % Bold job title and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the company name and location line
   \\
