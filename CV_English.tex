@@ -1,0 +1,333 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{bibentry}
+\usepackage{url}
+
+\newcounter{qcounter}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT SECTION
+%----------------------------------------------------------------------------------------
+\name{Lening Li}
+\address{Wayland, MA 01778, USA}
+\address{+1~(774)~823~2639 \\ leningli@outlook.com}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+\nobibliography{refs}
+\bibliographystyle{ieeetr}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+Reinforcement Learning \, $\circ$ \,
+Optimal Control \, $\circ$ \,
+Game Theory \, $\circ$ \,
+Formal Methods
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+{\bf Worcester Polytechnic Institute (WPI)} \hfill {Worcester, MA, USA} \\
+{\em{\bf Ph.D.} in Robotics Engineering} \hfill Aug. 2016 - Dec. 2022
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item Thesis: ``Optimal Control and Reinforcement Learning for Stochastic Systems under Temporal Logic Specifications''
+\end{list}
+
+{\em{\bf M.S.} in Robotics Engineering} \hfill Aug. 2016 - May 2018 \\
+{\em{\bf M.S.} in Computer Science} \hfill Aug. 2014 - May 2016
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item Thesis: ``Birrtopt: A combined software framework for motion planning applied on Atlas robot''
+\end{list}
+
+{\bf Harbin Institute of Technology (HIT)} \hfill {China} \\
+{\em{\bf B.S.} in Computer Science} \hfill Sep. 2010 - Jul. 2014
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item Summa Cum Laude (Top 5\% of class) \vspace{-0.5em}
+\item Thesis: ``Contourlet Transform Based Image Compression''
+\end{list}
+
+{\em{\bf B.A.} in English Language \& Literature} \hfill Sep. 2011 - Jul. 2014
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item Thesis: ``A Study on the Male Chauvinism in \emph{Women in Love}''
+\end{list}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Certifications}
+
+\begin{hSubsection}
+{Certified REC Foundation Coach}
+{Sep. 2023 - Sep. 2024}
+{Robotics Education \& Competition Foundation}
+{Online}
+{Coach and mentor robotics teams, fostering student growth in STEM and competitive engineering.}
+\end{hSubsection}
+
+\begin{hSubsection}
+{Certified FIRST Tech Challenge (FTC) Coach}
+{Nov. 2022 - May 2023}
+{FIRST Robotics}
+{Online}
+{Led and mentored FTC robotics teams, guiding students in robot design, programming, and competition strategy.}
+\end{hSubsection}
+
+\begin{hSubsection}
+{Certification in College Teaching}
+{Jun. 2017 - Aug. 2019}
+{Higher Education Consortium of Central Massachusetts (HECCMA)}
+{Worcester, MA, USA}
+{Professionally trained in evidence-based pedagogy to deliver high-quality courses.}
+\end{hSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	INDUSTRY & ADVISORY EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Industry \& Advisory Experience}
+
+\begin{rSubsection}{Robotics Lab Advisor}{Dec. 2025 - Present}{Harvard University}{Cambridge, MA, USA}
+\item Advise student research projects in robotics, with emphasis on algorithm design, experimental rigor, and reproducible evaluation.
+\item Provide technical mentorship spanning reinforcement learning, planning/control, and safety-oriented system design, bridging academic research and deployed robotics.
+\item Support lab execution through research reviews, project scoping, and structured feedback to improve research velocity and quality.
+\end{rSubsection}
+
+\begin{rSubsection}{Senior Software Engineer}{Oct. 2022 - Present}{Symbotic}{Wilmington, MA, USA}
+\item Designed and deployed scalable multi-agent path-planning and coordination algorithms for large-scale robotic warehouse systems in C++.
+\item Improved fleet-level robustness through advances in control design, state estimation, and fault-tolerant behavior architectures.
+\item Optimized real-time decision-making pipelines across thousands of autonomous robots operating under strict latency constraints.
+\end{rSubsection}
+
+\begin{rSubsection}{Senior Software Engineer}{Oct. 2021 - Aug. 2022}{Berkshire Grey}{Bedford, MA, USA}
+\item Led the development of perception and manipulation algorithms for picking previously unseen SKUs using ROS, C++, and Python.
+\item Reduced end-to-end system latency by redesigning inter-process communication and execution pipelines.
+\end{rSubsection}
+
+\begin{rSubsection}{Software Engineering Intern}{Jun. 2015 - Jan. 2016}{Rudolph Technologies}{Tewksbury, MA, USA}
+\item Designed an automated tool to migrate multiple legacy codebases onto a unified platform.
+\item Developed methods to improve data accuracy in wafer-defect collection and analysis pipelines.
+\end{rSubsection}
+
+\begin{rSubsection}{Software Engineering Intern}{Jul. 2013 - Aug. 2013}{Neusoft}{China}
+\item Built a map management system supporting streamlined insert, delete, and edit operations.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Representative Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages: & C/C++, Python, MATLAB \\
+Robotics \& Control: & Motion Planning, Optimal Control, Reinforcement Learning \\
+Robotic Systems: & ROS, ROS~2, Distributed Robotic Systems \\
+Machine Learning: & PyTorch, TensorFlow \\
+Languages: & English (Fluent), Chinese (Native)
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Teaching}
+
+\begin{rSubsection}
+{Teaching Assistant}{Aug. 2022 - Dec. 2022}{RBE 549. Computer Vision, WPI}{Worcester, MA, USA}
+\item Contributed to the design and delivery of a new computer vision course.
+\item Delivered lectures and supported student learning through structured office hours.
+\item Course website: \url{https://nitinjsanket.github.io/teaching/rbe549/fall2022.html}
+\end{rSubsection}
+
+\begin{rSubsection}
+{Teaching Assistant}{Aug. 2020 - May 2021}{RBE 3001 \& 3002. Unified Robotics III \& IV, WPI}{Worcester, MA, USA}
+\item Supervised labs on 3D-printed robot-arm control and mobile robot navigation.
+\item Created and assessed final projects, lab reports, and homework assignments.
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{Aug. 2018 - Dec. 2018}{RBE 549. Computer Vision, WPI}{Worcester, MA, USA}
+\item Delivered lectures and held office hours to support student learning and project execution.
+\end{rSubsection}
+
+\begin{rSubsection}{Teaching Assistant}{Aug. 2017 - May 2018}{RBE 1001. Introduction to Robotics, WPI}{Worcester, MA, USA}
+\item Managed and mentored a team of five undergraduate peer learning assistants.
+\item Created and assessed final projects, lab reports, and homework assignments.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	REPRESENTATIVE PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Representative Projects}
+
+\begin{rSubsection}{DARPA Robotics Challenge}{Aug. 2014 - May 2015}{Researcher}{Worcester, MA, USA}
+\item Collaborated with a Carnegie Mellon University team on the Atlas humanoid robot developed by Boston Dynamics.
+\item Designed a motion planner for arm manipulation tasks including door opening, valve turning, and tool grasping.
+\item Led the design of a human-robot interaction interface to improve operator effectiveness and task execution.
+\item Ranked 7th out of 24 teams.
+\end{rSubsection}
+
+\begin{rSubsection}{DARPA SI3-CMD: Serial Interactions in Imperfect Information Games for Complex Military Decision Making}{Jan. 2019 - Aug. 2020}{Researcher}{Worcester, MA, USA}
+\item Partnered with Scientific Systems Company Inc. (SSCI) to develop a game-theoretic framework and Python software for deceptive planning.
+\item Increased objective-achievement likelihood by leveraging asymmetric information and strategic deception.
+\item Formulated a solution concept for dynamic hypergames with temporal objectives.
+\end{rSubsection}
+
+\begin{rSubsection}{Optimal Control and Reinforcement Learning for Stochastic Systems under Temporal Logic Specifications}{Aug. 2016 - Aug. 2022}{Researcher}{Worcester, MA, USA}
+\item Developed a principled framework translating probabilistic temporal logic specifications into chance-constrained control problems with satisfaction guarantees.
+\item Proposed a scalable, model-free reinforcement learning approach for continuous stochastic systems with improved sample efficiency.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Honors \& Awards}
+
+\begin{nSubsection}
+{Alex F. Backlin Fund Scholarship}{Jan. 2021}
+{Worcester Polytechnic Institute}
+{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Travel Grant Award}{Oct. 2019}
+{Lehigh University}
+{Bethlehem, PA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award}{Oct. 2019}
+{Worcester Polytechnic Institute}
+{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award}{Mar. 2019}
+{Worcester Polytechnic Institute}
+{Worcester, MA, USA}
+\end{nSubsection}
+
+\begin{nSubsection}
+{Graduate Student Travel Award}{Jun. 2017}
+{Worcester Polytechnic Institute}
+{Worcester, MA, USA}
+\end{nSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extracurricular Activities and Leadership}
+
+\begin{rSubsection}{President}{Jan. 2019 - May 2020}{Graduate Student Government (GSG)}{Worcester, MA, USA}
+\item Oversaw governance operations and led the governing body.
+\item Represented graduate students in day-to-day interactions with university administration.
+\item Partnered with the Graduate Studies Office to elevate housing concerns to the Board of Trustees.
+\item Served on the Provost Search Committee and provided recommendations.
+\end{rSubsection}
+
+\begin{rSubsection}{Volunteer}{Jul. 2013 - Sep. 2013}{Lhasa Welfare Center for Children}{China}
+\item Raised funds to support educational services for children from low-income families.
+\item Tutored children in Chinese, Math, and English.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ORGANIZATION MEMBERSHIPS SECTION
+%----------------------------------------------------------------------------------------
+\begin{lSection}{Organization Memberships}
+\item {\bf Member}, IEEE
+\item {\bf Member}, IEEE Young Professionals
+\item {\bf Member}, IEEE Robotics and Automation Society
+\item {\bf Member}, Association for Women in Mathematics
+\item {\bf Member}, Alpha Chapter of Rho Beta Epsilon (Honor society) at Worcester Polytechnic Institute
+\end{lSection}
+
+%----------------------------------------------------------------------------------------
+%	SOCIAL MEDIA SECTION
+%----------------------------------------------------------------------------------------
+\begin{lSection}{Social Media}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l } \\
+LinkedIn: & \url{https://www.linkedin.com/in/lening-li/} \\
+Profile: & \url{https://lening.li} \\
+GitHub: & \url{https://github.com/leelening} \\
+Google Scholar: & \url{https://scholar.google.com/citations?user=KWUJ10wAAAAJ\&hl=en}
+\end{tabular}
+\end{lSection}
+
+%----------------------------------------------------------------------------------------
+%	EDITORIAL ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Academic Services}
+
+\begin{lSubsection}{Journal Reviewer}
+\item IEEE Robotics and Automation Letters (RA-L)
+\item IET Cyber-Systems and Robotics
+\item IEEE Transactions on Intelligent Transportation Systems
+\item Discover Robotics
+\item The Journal of Supercomputing
+\end{lSubsection}
+
+\begin{lSubsection}{Conference Reviewer}
+\item International Conference on Robotics and Automation (ICRA)
+\item American Control Conference (ACC)
+\item IEEE Conference on Decision and Control (CDC)
+\item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+\item International Conference on Ubiquitous Robots (UR)
+\item European Control Conference (ECC)
+\end{lSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+
+\begin{pSubsection}{Manuscripts in Preparation}{U.}
+\item \bibentry{li2023topological}
+\item \bibentry{li2021policy}
+\end{pSubsection}
+
+\begin{pSubsection}{Conferences}{C.}
+\item \bibentry{atkeson2015no}
+\item \bibentry{li2016birrtopt}
+\item \bibentry{li2017sampling}
+\item \bibentry{li2019topological}
+\item \bibentry{li2019approximate}
+\item \bibentry{li2023synthesis}
+\item \bibentry{li2023probabilistic}{(Acceptance rate: {\bf 15\%})}
+\end{pSubsection}
+
+\begin{pSubsection}{Journals}{J.}
+\item \bibentry{dedonato2017team}
+\item \bibentry{chen2018building}
+\item \bibentry{li2022dynamic}
+\end{pSubsection}
+
+\begin{pSubsection}{Chapters}{Ch.}
+\item \bibentry{atkeson2018achieving}
+\item \bibentry{atkeson2018happened}
+\end{pSubsection}
+
+\end{rSection}
+
+\end{document}

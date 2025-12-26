@@ -1,312 +1,323 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-\documentclass{resume} % Use the custom resume.cls style
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage{xeCJK}
+\documentclass{resume}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+% Chinese support (Overleaf-safe)
+\usepackage[UTF8]{ctex}
 
 \usepackage{bibentry}
-
+\usepackage{url}
 \newcounter{qcounter}
 
+%----------------------------------------------------------------------------------------
+% 联系方式
+%----------------------------------------------------------------------------------------
+\name{郦乐宁}
+\address{Wayland, MA 01778, 美国}
+\address{+1 (774) 823 2639 \\ leningli@outlook.com}
 
-%----------------------------------------------------------------------------------------
-%	CONTACT SECTION
-%----------------------------------------------------------------------------------------
-\name{郦乐宁} % Your name
-\address{160 Cambridge St, Unit 104, Burlington, MA 01803, USA}
-\address{+1~(774)~823~2639 \\ {leningli@outlook.com}
-}
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	REFERENCES SECTION
-%----------------------------------------------------------------------------------------
 \nobibliography{refs}
 \bibliographystyle{ieeetr}
 
-%----------------------------------------------------------------------------------------
-%	RESEARCH INTERESTS SECTION
-%----------------------------------------------------------------------------------------
+%========================================================================================
+% 研究兴趣
+%========================================================================================
 \begin{rSection}{研究兴趣}
-    强化学习 \, $\circ$ \, 优化控制 \, $\circ$ \, 博弈论 \, $\circ$ \, 形式化方法
+强化学习；最优控制；博弈论；形式化方法
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%========================================================================================
+% 教育背景
+%========================================================================================
 \begin{rSection}{教育背景}
-\begin{hSubsection}
-{机器人工程博士}{2016.8 - 至今} {\it 伍斯特理工学院} {伍斯特, 马萨诸塞, 美国}{成绩: \bf{4.0}/4.0}
-\end{hSubsection}
 
-\begin{hSubsection}
-{机器人工程硕士}
-{2016.8 - 2021.5}
-{伍斯特理工学院}
-{伍斯特, 马萨诸塞, 美国} 
-{成绩: \bf{3.70}/4.0}
-\end{hSubsection}
+{\bf 伍斯特理工学院（Worcester Polytechnic Institute, WPI）} \hfill 美国 马萨诸塞州 伍斯特 \\
+{\bf 机器人工程博士（Ph.D.）} \hfill 2016.08 -- 2022.12
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item 博士论文：\textit{基于时间逻辑约束的随机系统最优控制与强化学习}
+\end{list}
 
-\begin{hSubsection}
-{计算机科学硕士}
-{2014.8 - 2016.5}
-{伍斯特理工学院}
-{伍斯特, 马萨诸塞, 美国}
-{成绩: \bf{3.64}/4.0}
-\end{hSubsection}
+{\bf 机器人工程硕士（M.S.）} \hfill 2016.08 -- 2018.05 \\
 
-\begin{hSubsection}
-{信息安全和英语语言与文学学士}{2010.9 - 2014.7}
-{\it 哈尔滨工业大学（威海）}{威海, 山东, 中国} 
-{成绩: 85/100} ({\bf 前 10\%})
-\end{hSubsection}
+{\bf 计算机科学硕士（M.S.）} \hfill 2014.08 -- 2016.05
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item 硕士论文：\textit{Birrtopt：面向 Atlas 机器人的运动规划统一软件框架}
+\end{list}
+
+{\bf 哈尔滨工业大学（Harbin Institute of Technology, HIT）} \hfill 中国 \\
+{\bf 计算机科学学士（B.S.）} \hfill 2010.09 -- 2014.07
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item 荣誉：Summa Cum Laude（专业前 5\%）
+\item 本科论文：\textit{基于 Contourlet 变换的图像压缩}
+\end{list}
+
+{\bf 英语语言与文学学士（B.A.）} \hfill 2011.09 -- 2014.07
+\begin{list}{$\circ$}{\leftmargin=1.5em}
+\item 学位论文：\textit{《〈恋爱中的女人〉中的男性沙文主义研究》}
+\end{list}
+
 \end{rSection}
 
-\begin{rSection}{资质证书}
+%========================================================================================
+% 资格认证
+%========================================================================================
+\begin{rSection}{资格认证}
+
 \begin{hSubsection}
-{大学教学认证}
-{2017.6 - 2019.8}
-{Higher Education Consortium of Central Massachusetts (HECCMA)}
-{伍斯特, 马萨诸塞, 美国}
-{培训高等教育教学方法}
+{REC 基金会认证教练}
+{2023.09 -- 2024.09}
+{Robotics Education \& Competition Foundation}
+{线上}
+{指导与培养机器人竞赛团队，促进学生在 STEM 与工程实践方面的发展。}
 \end{hSubsection}
 
 \begin{hSubsection}
-{网站开发基础认证}
-{2015.6 - 2015.8}
-{哈佛大学}
-{剑桥, 马萨诸塞, 美国}
-{学习开发网站的方法, 包括CSS, HTML, JavaScript}
+{FIRST Tech Challenge（FTC）认证教练}
+{2022.11 -- 2023.05}
+{FIRST Robotics}
+{线上}
+{指导 FTC 机器人团队进行机器人设计、编程与竞赛策略制定。}
 \end{hSubsection}
+
+\begin{hSubsection}
+{大学教学资格认证}
+{2017.06 -- 2019.08}
+{马萨诸塞州中部高等教育联盟（HECCMA）}
+{美国 伍斯特}
+{接受循证教学法系统培训，具备高校课程设计与授课能力。}
+\end{hSubsection}
+
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	REPRESENTATIVE PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{代表项目}
-    \begin{rSubsection}{DARPA 机器人大赛}{2014.8 - 2015.5}{研究员}{伍斯特, 马萨诸塞, 美国}
-        \item 与卡内基梅隆大学合作研究人形机器人Atlas
-        \item 开发了运动规划理论用于机器手的操控
-    \end{rSubsection}
-    \begin{rSubsection}{DARPA Serial Interactions in Imperfect Information Games Applied to Complex Military Decision Making (SI3-CMD)}{2019.1 - 2020.8}{研究员}{伍斯特, 马萨诸塞, 美国}
-        \item 与 Scientific Systems Company Inc (SSCI) 合作开发欺骗规划博弈学理论
-        \item 提高了在不对称信息下的目标成功率
-    \end{rSubsection}
-    \begin{rSubsection}{在形式化规约下的随机系统的优化控制与强化学习}{2016.8 - 2022.8}{研究员}{伍斯特, 马萨诸塞, 美国}
-        \item 开发了一种无模型的强化学习方法在形式化规约下用于随机规划
-        \item 解决了在强化学习中稀疏奖励的问题
-\end{rSubsection} 
-\end{rSection}
+%========================================================================================
+% 行业与学术顾问经历
+%========================================================================================
+\begin{rSection}{行业与学术顾问经历}
 
-%----------------------------------------------------------------------------------------
-%	INDUSTRY EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{职业经历}
-\begin{rSubsection}{高级软件工程师}{2021.10 - 2022.8}{Berkshire Grey}{贝德福德, 马萨诸塞, 美国}
-    \item 开发算法抓取不明属性的物体
+\begin{rSubsection}{机器人实验室顾问}{2025.12 -- 至今}{哈佛大学}{美国 马萨诸塞州 剑桥}
+\item 指导机器人方向学生科研项目，重点关注算法设计、实验严谨性与结果可复现性。
+\item 提供涵盖强化学习、规划与控制以及安全导向系统设计的技术指导，连接学术研究与已部署机器人系统。
+\item 通过研究评审、项目范围界定与结构化反馈，提升实验室研究效率与整体质量。
 \end{rSubsection}
 
-\begin{rSubsection}{软件工程师实习}{2015.6 - 2016.1}{Rudolph Technologies}{图克斯伯里, 马萨诸塞, 美国}
-\item 开发自动化工具实现代码迁移
-\item 开发代码收集晶片数据
-\item 分析数据开发代码帮助客户提升晶圆产量
+\begin{rSubsection}{高级软件工程师}{2022.10 -- 至今}{Symbotic}{美国 马萨诸塞州 威明顿}
+\item 设计并部署用于大规模机器人仓储系统的可扩展多智能体（multi-agent）路径规划与协同算法（C++）。
+\item 通过改进控制设计、状态估计与容错行为架构，提升机器人集群层面的系统鲁棒性。
+\item 优化实时决策流水线，支持成千上万台自主机器人在严格时延约束下稳定运行。
 \end{rSubsection}
 
-\begin{rSubsection}{软件工程师实习}{2013.7 - 2013.8}{东软集团}{大连, 辽宁, 中国}
-\item 开发了高效的地图管理系统 
+\begin{rSubsection}{高级软件工程师}{2021.10 -- 2022.08}{Berkshire Grey}{美国 马萨诸塞州 贝德福德}
+\item 主导感知与操作算法开发，用于未知 SKU 的自动抓取（ROS、C++、Python）。
+\item 通过重构进程间通信与执行流水线，显著降低端到端系统延迟。
 \end{rSubsection}
+
+\begin{rSubsection}{软件工程师实习}{2015.06 -- 2016.01}{Rudolph Technologies}{美国 马萨诸塞州 特克斯伯里}
+\item 设计自动化工具，将多套遗留代码库迁移至统一软件平台。
+\item 开发方法以提升晶圆缺陷数据采集与分析流程的准确性。
+\end{rSubsection}
+
+\begin{rSubsection}{软件工程师实习}{2013.07 -- 2013.08}{东软集团（Neusoft）}{中国}
+\item 构建地图管理系统，支持高效的插入、删除与编辑操作。
+\end{rSubsection}
+
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	TEACHING EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%========================================================================================
+% 代表性技能
+%========================================================================================
+\begin{rSection}{代表性技能}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+编程语言： & C/C++, Python, MATLAB \\
+机器人与控制： & 运动规划，最优控制，强化学习 \\
+机器人系统： & ROS，ROS 2，分布式机器人系统 \\
+机器学习： & PyTorch，TensorFlow \\
+语言能力： & 英语（流利），中文（母语）
+\end{tabular}
+\end{rSection}
+
+%========================================================================================
+% 教学经历
+%========================================================================================
 \begin{rSection}{教学经历}
+
+\begin{rSubsection}{助教}{2022.08 -- 2022.12}{RBE 549 计算机视觉}{伍斯特理工学院}
+\item 参与新计算机视觉课程的设计与授课。
+\item 讲授课程内容，并通过结构化答疑支持学生学习。
+\item 课程网站：https://nitinjsanket.github.io/teaching/rbe549/fall2022.html
+\end{rSubsection}
+
+\begin{rSubsection}{助教}{2020.08 -- 2021.05}{RBE 3001 \& 3002 统一机器人系统 III \& IV}{伍斯特理工学院}
+\item 指导 3D 打印机械臂控制与移动机器人导航实验。
+\item 设计并评估课程项目、实验报告与作业。
+\end{rSubsection}
+
+\begin{rSubsection}{助教}{2018.08 -- 2018.12}{RBE 549 计算机视觉}{伍斯特理工学院}
+\item 讲授课程内容并主持答疑时间。
+\end{rSubsection}
+
+\begin{rSubsection}{助教}{2017.08 -- 2018.05}{RBE 1001 机器人导论}{伍斯特理工学院}
+\item 管理并指导 5 名本科生助教。
+\item 设计并评估课程项目、实验报告与作业。
+\end{rSubsection}
+
+\end{rSection}
+
+%========================================================================================
+% 代表性研究项目
+%========================================================================================
+\begin{rSection}{代表性研究项目}
+
+\begin{rSubsection}{DARPA Robotics Challenge}{2014.08 -- 2015.05}{研究人员}{美国}
+\item 与卡内基梅隆大学团队合作，参与 Boston Dynamics Atlas 人形机器人项目。
+\item 设计用于开门、阀门操作与工具抓取的机械臂运动规划算法。
+\item 主导人机交互界面设计，团队在 24 支参赛队伍中排名第 7。
+\end{rSubsection}
+
 \begin{rSubsection}
-{助教}{2022.8 - 2022.12}{RBE 549. 计算机视觉, 伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\item 帮助设计新的计算机视觉课程
-\item 课程网站：\url{https://nitinjsanket.github.io/teaching/rbe549/fall2022.html}
-\item 答疑和批改作业
-\end{rSubsection}
-
-\begin{rSubsection}{助教}{2018.8 - 2018.12}{RBE 549. 计算机视觉, 伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\item 负责图像过滤的教学任务
-\item 答疑和批改作业
+{DARPA SI3-CMD：复杂军事决策中的不完美信息序列交互}
+{2019.01 -- 2020.08}{研究人员}{美国}
+\item 与 Scientific Systems Company Inc.（SSCI）合作，开发基于博弈论的欺骗性规划框架与 Python 软件。
+\item 通过利用信息不对称与策略性欺骗，提高任务目标达成概率。
+\item 提出面向时间逻辑目标的动态超博弈（hypergame）解概念。
 \end{rSubsection}
 
 \begin{rSubsection}
-{助教}{2020.8 - 2021.5}{RBE 3001. \& 3002. 统一机器人技术 III \& IV, 伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\item 带领3D打印机器手和移动机器人的实验
-\item 答疑, 设计和批改实验报告、课程项目、作业
+{基于时间逻辑约束的随机系统最优控制与强化学习}
+{2016.08 -- 2022.08}{研究人员}{美国}
+\item 构建将概率时间逻辑规范转化为具满足性保证的机会约束控制问题的理论框架。
+\item 提出适用于连续随机系统的可扩展无模型强化学习方法，提高样本效率。
 \end{rSubsection}
 
-\begin{rSubsection}{助教}{2017.8 - 2018.5}{RBE 1001. 机器人学导论, 伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\item 日常管理5个本科生助教
-\item 答疑, 设计和批改实验报告、课程项目、作业
+\end{rSection}
+
+%========================================================================================
+% 荣誉与奖励
+%========================================================================================
+\begin{rSection}{荣誉与奖励}
+
+\begin{nSubsection}
+{Alex F. Backlin 基金奖学金}{2021.01}
+{伍斯特理工学院}{美国}
+\end{nSubsection}
+
+\begin{nSubsection}
+{研究生差旅奖}{2017.06}
+{伍斯特理工学院}{美国}
+\end{nSubsection}
+
+\begin{nSubsection}
+{研究生差旅奖}{2019.03}
+{伍斯特理工学院}{美国}
+\end{nSubsection}
+
+\begin{nSubsection}
+{研究生差旅奖}{2019.10}
+{伍斯特理工学院}{美国}
+\end{nSubsection}
+
+\begin{nSubsection}
+{差旅资助奖}{2019.10}
+{利哈伊大学}{美国}
+\end{nSubsection}
+
+\end{rSection}
+
+%========================================================================================
+% 课外活动与领导力
+%========================================================================================
+\begin{rSection}{课外活动与领导力}
+
+\begin{rSubsection}{研究生学生会主席}{2019.01 -- 2020.05}{伍斯特理工学院}{美国}
+\item 负责研究生学生会整体治理与运作。
+\item 代表研究生群体与学校管理层进行日常沟通。
+\item 与研究生院合作，将研究生住房问题提交董事会讨论。
+\item 作为成员参与校长遴选委员会并提出建议。
 \end{rSubsection}
-\end{rSection}
 
-
-
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{计算机技能}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    编程语言 & C/C++, Python, LaTex, MATLAB \\
-    机器人工具 & Ubuntu, ROS, RVIZ, Gazebo, OpenRave \\
-    软件 & PyTorch, TensorFlow, Git, Elasticsearch, Kubernetes, QtCreator
-    \end{tabular}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{过往荣誉}
-\begin{nSubsection}
-{优秀毕业生}
-{2014.7}
-{哈尔滨工业大学（威海）}{威海，山东，中国}
-\end{nSubsection}
-
-\begin{nSubsection}
-{Alex F. Backlin 奖学金, \$1610} {2021.1}
-{伍斯特理工学院}
-{伍斯特, 马萨诸塞, 美国}
-\end{nSubsection}
-
-\begin{nSubsection}
-{旅行奖励, \$250}{2019.10}
-{理海大学}{伯利恒, 宾夕法尼亚, 美国}
-\end{nSubsection}
-
-\begin{nSubsection}
-{研究生旅行奖励, \$500}{2019.10}
-{伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\end{nSubsection}
-
-\begin{nSubsection}
-{研究生旅行奖励, \$400}{2019.3}
-{伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\end{nSubsection}
-
-\begin{nSubsection}
-{研究生旅行奖励, \$1000}{2017.6}
-{伍斯特理工学院}{伍斯特, 马萨诸塞, 美国}
-\end{nSubsection}
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	EXTRACURRICULAR ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{课外经历}
-    \begin{rSubsection}{主席}{2019.1 - 2020.5}{研究生学生会}{伍斯特, 马萨诸塞, 美国}
-        \item 管理研究生学生会
-        \item 代表研究生学生会与学校行政部门合作
-        \item 在研究生住宿问题上与研究生办公室合作向校董会报告演讲
-        \item 代表研究生学生会帮助寻找教务处处长
-    \end{rSubsection}
-    \begin{rSubsection}{志愿者}{2013.7 - 2013.9}{拉萨儿童福利院}{拉萨, 西藏, 中国}
-        \item 为贫困儿童募款
-        \item 为学习困难的学生讲授课程内容
+\begin{rSubsection}{志愿者}{2013.07 -- 2013.09}{拉萨儿童福利院}{中国}
+\item 为低收入家庭儿童筹集教育经费。
+\item 为儿童提供语文、数学与英语辅导。
 \end{rSubsection}
+
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	ORGANIZATION MEMBERSHIPS SECTION
-%----------------------------------------------------------------------------------------
-\begin{lSection}{会籍}
-    \item {\bf 会员}, IEEE
-    \item {\bf 会员}, IEEE Young Professionals
-    \item {\bf 会员}, IEEE Robotics and Automation Society
-    \item {\bf 会员}, Association for Women in Mathematics
-    \item {\bf 会员}, Alpha Chapter of Rho Beta Epsilon (荣誉团体), 伍斯特理工学院.
-\end{lSection}
-
-%----------------------------------------------------------------------------------------
-%	SOCIAL MEDIA SECTION
-%----------------------------------------------------------------------------------------
-\begin{lSection}{社交}
-    \item 领英: \url{https://www.linkedin.com/in/lening-li}
-    \item 个人: \url{https://lening.li}
-    \item GitHub: \url{https://github.com/leelening}
-    \item Google 学术: \url{https://scholar.google.com/citations?user=KWUJ10wAAAAJ\&hl=en}
-\end{lSection}
-
-%----------------------------------------------------------------------------------------
-%	LANGUAGE PROFICIENCY SECTION
-%----------------------------------------------------------------------------------------
-\begin{lSection}{语言}
-    \item {\bf 中文}, 母语
-    \item {\bf 英语}, 精通
-\end{lSection}
-
-%----------------------------------------------------------------------------------------
-%	EDITORIAL ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{审稿}
-    \begin{lSubsection}{期刊审稿}
-        \item IEEE Control Systems Letters (L-CSS)
-        \item IET Cyber-Systems and Robotics
-    \end{lSubsection}
-    \begin{lSubsection}{会议审稿}
-        \item International Conference on Robotics and Automation (ICRA) 2017 2021.
-        \item American Control Conference (ACC), 2019 2021
-        \item IEEE Conference on Decision and Control (CDC), 2018 2019 2020
-        \item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020
-        \item International Conference on Ubiquitous Robots (UR), 2020
-    \end{lSubsection}
+%========================================================================================
+% 学术与专业组织成员
+%========================================================================================
+\begin{rSection}{学术与专业组织成员}
+\item IEEE 会员
+\item IEEE Young Professionals 会员
+\item IEEE Robotics and Automation Society 会员
+\item Association for Women in Mathematics 会员
+\item Rho Beta Epsilon 荣誉学会（WPI Alpha Chapter）
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{论文}
-    \begin{pSubsection}{准备中}{U}
-        \item L.Li and J. Fu, "Topological Order Guided Actor-Critic Modular Learning of Continuous Systems with Temporal Objectives ", 2022
-    \end{pSubsection}
+%========================================================================================
+% 学术服务
+%========================================================================================
+\begin{rSection}{学术服务}
 
-    \begin{pSubsection}{会议}{C}
-        \item \bibentry{li2019topological}
-        \item \bibentry{li2019approximate}
-        \item \bibentry{li2017sampling}
-        \item \bibentry{li2016birrtopt}
-        \item \bibentry{atkeson2015no}
-        \item \bibentry{li2021policy}
-    \end{pSubsection}
+\begin{lSubsection}{期刊审稿人}
+\item IEEE Robotics and Automation Letters (RA-L)
+\item IET Cyber-Systems and Robotics
+\item IEEE Transactions on Intelligent Transportation Systems
+\item Discover Robotics
+\item The Journal of Supercomputing
+\end{lSubsection}
 
-    \begin{pSubsection}{期刊}{J}
-        \item \bibentry{chen2018building}
-        \item \bibentry{dedonato2017team}
-        \item \bibentry{atkeson2016happened}
-        \item \bibentry{li2020dynamic}
-    \end{pSubsection}
-    
-    \begin{pSubsection}{书籍}{B}
-        \item \bibentry{atkeson2018achieving}
-        \item \bibentry{atkeson2018happened}
-    \end{pSubsection}
+\begin{lSubsection}{会议审稿人}
+\item International Conference on Robotics and Automation (ICRA)
+\item American Control Conference (ACC)
+\item IEEE Conference on Decision and Control (CDC)
+\item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+\item International Conference on Ubiquitous Robots (UR)
+\item European Control Conference (ECC)
+\end{lSubsection}
 
-    \begin{pSubsection}{论文}{T}
-        \item \bibentry{limaster}
-        \item \bibentry{libs}
-        \item \bibentry{liba}
-        \item L.Li, {\it Optimal Control and Reinforcement Learning for Stochastic Systems under Temporal Logic Specifications.} Doctoral  thesis, Worcester Polytechnic Institute, 2022
-    \end{pSubsection}
-    
-    \begin{pSubsection}{演讲}{P}
-        \item {Topological approximate dynamic programming under temporal logic constraints.} Poster Presentation, Northeast Robotics Colloquium (NERC), 2019.
-        \item {Topological approximate dynamic programming under temporal logic constraints.} Poster Presentation, Robot Learning Workshop, 2019.
-        \item {Approximate dynamic programming with probabilistic temporal logic constraints}, Paper Presentation, American Control Conference (ACC), 2019.
-        \item {Sampling-based approximate optimal temporal logic planning}, Paper Presentation, IEEE International Conference on Robotics and Automation (ICRA), 2017
-        \item {Birrtopt: A combined sampling and optimizing motion planner for humanoid robots} Poster Presentation, International Conference on Humanoid Robots (Humanoids), 2016.
-        \item {Birrtopt: A combined sampling and optimizing motion planner for humanoid robots} Paper Presentation, Northeast Robotics Colloquium (NERC), 2016.
-    \end{pSubsection}
 \end{rSection}
 
+%========================================================================================
+% 学术主页与社交媒体
+%========================================================================================
+\begin{rSection}{学术主页与社交媒体}
+LinkedIn: \url{https://www.linkedin.com/in/lening-li/} \\
+个人主页: \url{https://lening.li} \\
+GitHub: \url{https://github.com/leelening} \\
+Google Scholar: \url{https://scholar.google.com/citations?user=KWUJ10wAAAAJ}
+\end{rSection}
 
+%========================================================================================
+% 论文发表（保持英文）
+%========================================================================================
+\begin{rSection}{论文发表}
+
+\begin{pSubsection}{Manuscripts in Preparation}{U.}
+\item \bibentry{li2023topological}
+\item \bibentry{li2021policy}
+\end{pSubsection}
+
+\begin{pSubsection}{Conferences}{C.}
+\item \bibentry{atkeson2015no}
+\item \bibentry{li2016birrtopt}
+\item \bibentry{li2017sampling}
+\item \bibentry{li2019topological}
+\item \bibentry{li2019approximate}
+\item \bibentry{li2023synthesis}
+\item \bibentry{li2023probabilistic}{(录用率：15\%)}
+\end{pSubsection}
+
+\begin{pSubsection}{Journals}{J.}
+\item \bibentry{dedonato2017team}
+\item \bibentry{chen2018building}
+\item \bibentry{li2022dynamic}
+\end{pSubsection}
+
+\begin{pSubsection}{Chapters}{Ch.}
+\item \bibentry{atkeson2018achieving}
+\item \bibentry{atkeson2018happened}
+\end{pSubsection}
+
+\end{rSection}
 
 \end{document}
