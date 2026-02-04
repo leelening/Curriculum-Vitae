@@ -5,8 +5,12 @@
 *.log
 *.fdb_latexmk
 *.pdf
+!CV_English.pdf
+!Resume.pdf
+!cv_Chinese.pdf
 *.synctex.gz
 *.out
 *.bbl
 *.blg
 *.synctex(busy)
+*.xdv
