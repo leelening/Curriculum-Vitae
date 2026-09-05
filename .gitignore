@@ -1,16 +1,32 @@
+# --- OS / editor -----------------------------------------------------------
 .history/
+.vscode/
 *.DS_Store
+Thumbs.db
+
+# --- LaTeX build artifacts -------------------------------------------------
 *.aux
-*.fls
-*.log
-*.fdb_latexmk
-*.pdf
-!CV_English.pdf
-!Resume.pdf
-!cv_Chinese.pdf
-*.synctex.gz
-*.out
 *.bbl
+*.bcf
 *.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
 *.synctex(busy)
+*.toc
+*.vrb
 *.xdv
+
+# --- Compiled PDFs (built by CI, downloadable as workflow artifacts) ------
+*.pdf

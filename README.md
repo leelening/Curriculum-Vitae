@@ -1,7 +1,7 @@
 # Curriculum-Vitae
 
 [![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)](https://www.latex-project.org/)
-[![PDF](https://img.shields.io/badge/PDF-Available-red)](https://github.com/leelening/Curriculum-Vitae/blob/main/CV_English.pdf)
+[![Build](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml/badge.svg)](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml)
 
 Professional CV/Resume repository for Lening Li (郦乐宁).
 
@@ -11,11 +11,13 @@ This repository contains the LaTeX source files for my professional curriculum v
 
 ## 📄 Documents
 
-| Document | File | Description |
-|----------|------|-------------|
-| **English CV** | [`CV_English.pdf`](./CV_English.pdf) | Full academic and professional CV |
-| **Chinese CV** | [`cv_Chinese.pdf`](./cv_Chinese.pdf) | 中文履历 |
-| **Resume** | [`Resume.pdf`](./Resume.pdf) | Condensed one-page resume |
+| Document | Source | Description |
+|----------|--------|-------------|
+| **English CV** | [`CV_English.tex`](./CV_English.tex) | Full academic and professional CV |
+| **Chinese CV** | [`cv_Chinese.tex`](./cv_Chinese.tex) | 中文履历 |
+| **Resume** | [`Resume.tex`](./Resume.tex) | Condensed one-page resume |
+
+PDFs are not stored in this repository. Every `.tex` file is compiled by GitHub Actions on each push; download the built PDFs from the [latest workflow run](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml) under **Artifacts**.
 
 ## Tech Stack
 
@@ -63,12 +65,14 @@ pdflatex Resume.tex
 
 ```
 .
+├── .github/workflows/
+│   └── latex.yml        # CI: compiles every .tex, uploads PDFs as artifacts
 ├── CV_English.tex       # English CV source
-├── CV_English.pdf       # English CV output
 ├── cv_Chinese.tex       # Chinese CV source
-├── cv_Chinese.pdf       # Chinese CV output
 ├── Resume.tex           # Resume source
-├── Resume.pdf           # Resume output
+├── CV_KPMG_Manager_AI.tex     # Tailored CV variant
+├── archive/             # Superseded sources, not built by CI
+│   └── CV_AGC_Associate_TMT.tex
 ├── resume.cls           # Custom LaTeX class
 └── refs.bib             # Bibliography references
 ```
