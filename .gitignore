@@ -3,6 +3,7 @@
 .vscode/
 *.DS_Store
 Thumbs.db
+Claude outputs/
 
 # --- LaTeX build artifacts -------------------------------------------------
 *.aux

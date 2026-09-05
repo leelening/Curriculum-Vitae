@@ -1,7 +1,7 @@
 # Curriculum-Vitae
 
 [![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white)](https://www.latex-project.org/)
-[![Build](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml/badge.svg)](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml)
+[![Build](https://github.com/leelening/curriculum_vitae/actions/workflows/latex.yml/badge.svg)](https://github.com/leelening/curriculum_vitae/actions/workflows/latex.yml)
 
 Professional CV/Resume repository for Lening Li (郦乐宁).
 
@@ -17,7 +17,7 @@ This repository contains the LaTeX source files for my professional curriculum v
 | **Chinese CV** | [`cv_Chinese.tex`](./cv_Chinese.tex) | 中文履历 |
 | **Resume** | [`Resume.tex`](./Resume.tex) | Condensed one-page resume |
 
-PDFs are not stored in this repository. Every `.tex` file is compiled by GitHub Actions on each push; download the built PDFs from the [latest workflow run](https://github.com/leelening/Curriculum-Vitae/actions/workflows/latex.yml) under **Artifacts**.
+PDFs are not stored in this repository. Every `.tex` file is compiled by GitHub Actions on each push; download the built PDFs from the [latest workflow run](https://github.com/leelening/curriculum_vitae/actions/workflows/latex.yml) under **Artifacts**.
 
 ## Tech Stack
 
@@ -45,8 +45,8 @@ PDFs are not stored in this repository. Every `.tex` file is compiled by GitHub 
 
 ```bash
 # Clone the repository
-git clone https://github.com/leelening/Curriculum-Vitae.git
-cd Curriculum-Vitae
+git clone https://github.com/leelening/curriculum_vitae.git
+cd curriculum_vitae
 
 # Build English CV
 pdflatex CV_English.tex
@@ -70,9 +70,9 @@ pdflatex Resume.tex
 ├── CV_English.tex       # English CV source
 ├── cv_Chinese.tex       # Chinese CV source
 ├── Resume.tex           # Resume source
-├── CV_KPMG_Manager_AI.tex     # Tailored CV variant
 ├── archive/             # Superseded sources, not built by CI
-│   └── CV_AGC_Associate_TMT.tex
+│   ├── CV_AGC_Associate_TMT.tex
+│   └── CV_KPMG_Manager_AI.tex
 ├── resume.cls           # Custom LaTeX class
 └── refs.bib             # Bibliography references
 ```
